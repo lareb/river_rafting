@@ -1,0 +1,22 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: root
+  password: root
+  socket: /var/run/mysqld/mysqld.sock
+development:
+  <<: *default
+  database: 'urban_clap_development'
+
+test:
+  <<: *default
+  database: creative_automation_test
+
+production:
+  <<: *default
+  database: <%= ENV["CA_DB_NAME"] %>
+  username: <%= ENV["CA_DB_USER"] %>
+  password: <%= ENV['CA_DB_PASS'] %>
+  host: <%= ENV['CA_DB_HOST'] %>
+  port: <%= ENV['CA_DB_PORT'] %>
