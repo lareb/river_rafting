@@ -37,6 +37,8 @@ gem 'dotenv-rails', groups: [:development, :test]
 gem 'solidus'
 gem 'solidus_auth_devise'
 
+# gem 'spree_api_auth', path: '../spree_api_auth'
+gem 'spree_api_auth', github: 'lareb/spree_api_auth', branch: 'solidus-2.9.0'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
@@ -46,6 +48,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'awesome_print'
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'

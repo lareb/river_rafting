@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/lareb/spree_api_auth.git
+  revision: e0b09c7bb9af39645959d7f7bd8a8e8c689db2b4
+  branch: solidus-2.9.0
+  specs:
+    spree_api_auth (0.2.2)
+      solidus_api (~> 2.9.0)
+      solidus_core (~> 2.9.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -58,6 +67,7 @@ GEM
       execjs
     awesome_nested_set (3.1.4)
       activerecord (>= 4.0.0, < 5.3)
+    awesome_print (1.8.0)
     bcrypt (3.1.13)
     bindex (0.8.1)
     bootsnap (1.4.4)
@@ -353,6 +363,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  awesome_print
   bootsnap (>= 1.1.0)
   byebug
   capybara (>= 2.15)
@@ -368,6 +379,7 @@ DEPENDENCIES
   selenium-webdriver
   solidus
   solidus_auth_devise
+  spree_api_auth!
   spring
   spring-watcher-listen (~> 2.0.0)
   turbolinks (~> 5)
