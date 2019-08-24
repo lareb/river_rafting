@@ -34,8 +34,13 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'dotenv-rails', groups: [:development, :test]
-gem 'solidus'
-gem 'solidus_auth_devise'
+gem 'solidus' #'~> 2.9.0'
+gem 'solidus_auth_devise' #, '~> 2.9.0'
+# solidus multi vendor
+gem 'solidus_multi_vendor', github: 'kainio/solidus_multi_vendor'
+gem 'solidus_email_to_friend', github: 'boomerdigital/solidus_email_to_friend', branch: 'master'
+
+
 
 # gem 'spree_api_auth', path: '../spree_api_auth'
 gem 'spree_api_auth', github: 'lareb/spree_api_auth', branch: 'solidus-2.9.0'
